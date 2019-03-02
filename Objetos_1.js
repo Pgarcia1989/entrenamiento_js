@@ -12,18 +12,19 @@
     };
 // Almaceno el número
 let randomnumber = generateNumber.generateRandomNumber();
-
+console.log(randomnumber);
 let userNumber = document.querySelector('.guessNumber');
-let userSend = document.querySelector('.guessSubmit');
+var userSend = document.querySelector('.guessSubmit');
 let numberTries = document.querySelector('guessNumberTries');
 let lowNumber = document.querySelector('low_result');
 let lastResult = document.querySelector('last_result');
-let guessTries = 0;
+var guessTries = 0;
 
-function checkGuess(){
-  userGuess = userNumber.value();
+function checkGuess() {
 
-//
-
+guessTries++;
+console.log(guessTries);
 }
+
+userSend.addEventListener('click', checkGuess);
 
