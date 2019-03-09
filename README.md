@@ -1,2 +1,1 @@
-# entrenamiento_js
-# entrenamiento_js
+<h1>Componentes Js</h1>
