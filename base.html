@@ -11,27 +11,20 @@
 <body>
 
 <section id="main-content">
-    <h1>Adivina el número mágico</h1>
-    <div>
-     <p>
-         Adivina un número aleatorio entre 1 y 100.
-     </p>
-    </div>
-    <div>
-        <form action="">
-            <input type="number" name="number" class="guessNumber">
-            <input type="submit" value="Enviar" class="guessSubmit">
-        </form>
-    </div>
-    <div>
-        <p class="guessNumberTries"></p>
-        <p class="low_result"></p>
-        <p class="last_result"></p>
-        <p></p>
+    <div class="form">
+        <label for="guessField">Adivina el numero: </label>
+        <input type="text" id="guessField" class="guessField">
+        <input type="submit" value="Enviar intento" class="guessSubmit">
+        <button class="btn_guess">Ver intentos</button>
+        </div>
+    <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="log"></p>
+        <p class="lowOrHi"></p>
     </div>
 </section>
 
-
-<script src="./Objetos_1.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
